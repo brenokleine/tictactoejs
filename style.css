@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--pDark);
+    font-family: 'Tilt Neon', cursive;
+    cursor: cell;
+}
+
+:root{
+    --pDark: #2e2c2a;
+    --pGreen: #5c5b40;
+    --pViolet: #545395;
+    --pPink: #8e72ab;
+    --pLightPink: #be96c2;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pPink);
+}
+
+h1{
+    font-size: 60px;
+}
+
+.header{
+    width: 100%;
+    text-align: center;
+}
+
+#startPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 25px;
+    width: 100%;
+    height: 80%;
+    visibility: visible;
+}
+
+.input, #start, .endButtons{
+    outline: none;
+    width: 350px;
+    background-color: var(--pViolet);
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 10px;
+    color: var(--pLightPink);
+    transition: 0.3s;
+}
+
+.input:focus{
+    width: 430px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#start:hover, .endButtons:hover{
+    cursor: pointer;
+    background-color: var(--pLightPink);
+    color: var(--pViolet);
+}
+
+#game{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#scoreboard{
+    text-align: center;
+    height: min-content;
+}
+
+
+#field{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background-color: #2e2c2a;
+    margin: 25px;
+    
+}
+
+.place{
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background-color: var(--pPink);
+    font-size: 70px;
+}
+
+.place:hover{
+    background-color: var(--pLightPink);
+}
+
+.place:active{
+    background-color: var(--pViolet);
+}
+
+.finalize{
+    padding-bottom: 15px;
+}
+
+footer{
+    background-color: var(--pDark);
+    height: 140px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+footer p{
+    color: var(--pLightPink);
+    padding-top: 10px;
+}
+
+.fa{
+    color: var(--pLightPink);
+    text-decoration: none;
+    padding: 5px;
+}
+
+

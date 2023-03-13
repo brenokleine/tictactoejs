@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <section class="header">
+        <h1>Tic Tac Toe: Javascript Edition</h1>
+    </section>
+
+    <div id="startPage">
+        <p>Type the player's names and click start</p>
+
+        <div class="player">
+            <label for="player1">Player 1: </label><br>
+            <input type="text" id="player1" class="input">
+        </div>
+        <div class="player">
+            <label for="player2">Player 2: </label><br>
+            <input type="text" id="player2" class="input">
+        </div>
+
+        <button id="start">Start Game</button>
+    </div>
+
+    <div id="game">
+        <h2 id="scoreboard"></h2>
+
+        <div id="field">
+            <button class="place" id="11" value="OFF"></button>
+            <button class="place" id="12" value="OFF"></button>
+            <button class="place" id="13" value="OFF"></button>
+            <button class="place" id="21" value="OFF"></button>
+            <button class="place" id="22" value="OFF"></button>
+            <button class="place" id="23" value="OFF"></button>
+            <button class="place" id="31" value="OFF"></button>
+            <button class="place" id="32" value="OFF"></button>
+            <button class="place" id="33" value="OFF"></button>
+        </div>
+
+        <div class="finalize">
+            <button id="restart" class="endButtons">Restart game</button>
+    
+            <button id="menu" class="endButtons">Main Menu</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by Breno Kleine Bernstein 2023</p>
+
+        <div class="links">
+            <a href="https://github.com/brenokleine" class="fa fa-github-square" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
